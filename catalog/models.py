@@ -51,7 +51,6 @@ class Product(models.Model):
         auto_now=True, verbose_name="Дата последнего изменения"
     )
 
-
     def __str__(self):
         return f"{self.product_name}: {self.price}"
 
