@@ -50,7 +50,7 @@ class Product(models.Model):
     updated_at = models.DateTimeField(
         auto_now=True, verbose_name="Дата последнего изменения"
     )
-    manufactured_at = models.TextField(null=True, verbose_name="Дата производства продукта")
+
 
     def __str__(self):
         return f"{self.product_name}: {self.price}"
